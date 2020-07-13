@@ -1,0 +1,25 @@
+/*******
+SETTING THE FONT OF THE TEXT
+**** */
+
+p{
+    font-family:sans-serif;
+    font-size: 15px;
+}
+
+/**** 
+MODIFYING THE INPUT FORM FIELD 
+*****/
+input{
+    display:block;
+    border:2px solid black;
+    border-radius: 50px;
+    border-width:medium;
+    margin: 10px;
+
+}
+
+label{
+    margin-top:40;
+    margin-bottom: 40px;
+}
