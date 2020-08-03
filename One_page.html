@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/one_page_website.css">
+    <script src="js/one_page_website.js"></script>
 </head>
 <body>
  <!-- Navigation -->
@@ -41,8 +42,6 @@
    <!-- End of Home Page -->
    
    <!-- Our Ingredients-->
-   
-   <section>
        <div id="Ingredients">
             <h1>Here is some of our products</h1><br>
               <ul>
@@ -51,35 +50,80 @@
                  <li>Organic Herbs</li>
               </ul>
               
-              <p> We use only the finest, highest quality ingredients sourced from our expert herbalists and farmers from across the world. We take pride in using high quality herbs, perfect medicinal charcoal and essential oils. We are also 100% chemical free and use only natural, organic essential oils in our products.</p>
-     <!--Start of ingredient 1-->
-           <div>
+              <p> We use only the finest, highest quality 
+                  ingredients sourced from our expert 
+                  herbalists and farmers from across the world. We take 
+                  pride in using high quality herbs, perfect medicinal 
+                  charcoal and essential oils. We are also 
+                  100% chemical free and use only natural, 
+                  organic essential oils in our products.</p>
+       </div>
+       <!--images used to open the lightbox-->
+        <div class = "row">
+           <div class = "column">
                <img src="images/activatedcharcoalmain-1000-1518566610.jpg"
-               height:="25%" width:="25%" alt="Activated Charcoal">
+                alt="Activated Charcoal" 
+               onclick="openModal();currentslide(1)" class="hover-shadow">
            </div>
-       </div>
-   <!-- end of ingredient 1-->
-   
-    <!--Start of ingredient 2-->
-       <div>
-           <div>
+           <div class = "column">
                <img src="images/493ss_thinkstock_rf_essential_oils.jpg"
-               height:="20%" width:="20%" alt="Essential Oils">
+               alt="Essential Oils"
+               onclick="openModal();currentslide(2)" class="hover-shadow">
            </div>
-       </div>
-    <!--end of ingredient 2-->
-    
-    <!--Start of ingredient 3-->
-        <div>
-           <div>
+           <div class = "column">
                <img src="images/1074954_herbal-medicines-ss-18.jpg"
-               height:50% width:50% alt="Essential Oils">
+               alt="Essential Oils"
+               onclick="openModal();currentslide(3)" class="hover-shadow">
            </div>
-       </div>
-      <!--end of ingredient 3-->
-       
-   </section>
-   <!--End Our ingredients-->
+        </div>
+        <!--the modal/lightbox-->
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/activatedcharcoalmain-1000-1518566610.jpg">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/493ss_thinkstock_rf_essential_oils.jpg">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/1074954_herbal-medicines-ss-18.jpg">
+            </div>
+        
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="images/activatedcharcoalmain-1000-1518566610.jpg" onclick="currentSlide(1)" alt="Nature">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="images/493ss_thinkstock_rf_essential_oils.jpg" onclick="currentSlide(2)" alt="Snow">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="images/1074954_herbal-medicines-ss-18.jpg" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+            </div>
+        </div>
+
+
+        
+
    <!--Start of 100% organic Page-->
    <section>
        <div>
